@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Sample Heading</h1>
+    <div class="container webpagecontainer mobilepagecontainer">
+        <header class="webheader mobheader">
+            <h1 class="webheading mobheading">Sample heading</h1>
             <ol>
-                <li>Lorem ipsum dolor sit amet consectetur</li>
-                <li>Adipisicing elit tempore dolorem</li>
-                <li>Laborum distinctio incidunt quae voluptas tempore dolorem</li>
+                <li><p>Lorem ipsum dolor sit amet consectetur</p></li>
+                <li><p>Adipisicing elit tempore dolorem</p></li>
+                <li><p>Laborum distinctio incidunt quae voluptas tempore dolorem</p></li>
             </ol>
         </header>
     
-        <main>
-           
+        <main class="mobmain webmain">
     
             <form id="create-account-form">
                     <div id="createaccount">
@@ -28,15 +27,34 @@
                         <label for="email">Enter your email:</label>
                         <input type="email" id="email" placeholder="add valid email address">
                     </div>
-                    <div id="date" class="form-block">
+                    <div id="date">
                         <label for="">Date of birth <span>(optional)</span></label>
-                        <div id="dateblock">
-                            <label for="date">Date:</label>
-                            <input type="number" id="date">
-                            <label for="month">Month:</label>
-                            <input type="number" id="month">
-                            <label for="year">Year:</label>
-                            <input type="number" id="year">
+                        <div id="datecontainer">
+                            <div class="dateblocks">
+                                <label for="date">Date:</label>
+                                <input type="number" id="date">
+                            </div>
+                            <div class="dateblocks">
+                                <label for="month">Month:</label>
+                                <select name="month" class="month">
+                                    <option value="jan">January</option>
+                                    <option value="feb">February</option>
+                                    <option value="mar">March</option>
+                                    <option value="apr">April</option>
+                                    <option value="may">May</option>
+                                    <option value="jun">June</option>
+                                    <option value="jul">July</option>
+                                    <option value="aug">August</option>
+                                    <option value="sept">September</option>
+                                    <option value="oct">October</option>
+                                    <option value="nov">November</option>
+                                    <option value="dec">December</option>
+                                </select>
+                            </div>
+                            <div class="dateblocks">
+                                <label for="year">Year:</label>
+                                <input type="number" id="year">
+                            </div>
                         </div>
                     </div>
                     <div id="password" class="form-block">
